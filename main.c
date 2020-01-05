@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "problem_3_2.h"
 #include "problem_3_13.h"
+#include "problem 3_14.h"
 
 int main() {
     setbuf(stdout, 0);
@@ -17,6 +18,10 @@ int main() {
         }
         case 1: {
             p_3_13();
+            break;
+        }
+        case 2: {
+            p_3_14();
             break;
         }
     }
