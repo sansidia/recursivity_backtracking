@@ -52,6 +52,10 @@ void p_3_13() {
     scanf("%d", &startingTile.row);
     printf("Choose starting point column:\n");
     scanf("%d", &startingTile.col);
+    if (labyrinth.matrix[startingTile.row][startingTile.col] == 0) {
+        printf("Starting point is a wall, no exits available.\n");
+        return;
+    }
     labyrinth.matrix[startingTile.row][startingTile.col] = STARTING_TILE;
     //endregion
 
